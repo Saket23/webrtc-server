@@ -9,7 +9,7 @@ app.use(cors())
 
 let connectedUsers = [];
 
-const PORT = 3030
+const PORT = process.env.PORT || 3030
 
 const server = app.listen(PORT, function () {
     console.log(`Listening on port ${PORT}`);
